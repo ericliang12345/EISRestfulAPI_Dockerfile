@@ -33,6 +33,7 @@ RUN apt-get install -y sudo
 
 #install npm & nodejs
 RUN apt-get install -y npm
+RUN curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 RUN apt-get install -y nodejs
 
 # networking
